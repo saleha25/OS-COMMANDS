@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Linux Tutorial for Beginners</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #ecf0f1;
+            color: #2c3e50;
+            line-height: 1.6;
+            padding: 30px;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 40px;
+            font-size: 2.5rem;
+            color: #34495e;
+        }
+
+        .section {
+            background: #ffffff;
+            padding: 20px 25px;
+            margin-bottom: 25px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            border-left: 6px solid #3498db;
+        }
+
+        .section:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08);
+        }
+
+        h2 {
+            margin-bottom: 10px;
+            font-size: 1.4rem;
+            color: #2980b9;
+        }
+
+        p {
+            font-size: 1rem;
+            color: #555;
+        }
+
+        code {
+            background: #f4f4f4;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-family: 'Courier New', Courier, monospace;
+            color: #e74c3c;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 20px 15px;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            .section {
+                padding: 15px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>🚀 Linux Tutorial: Learn the Basics</h1>
+
+    <div class="section">
+        <h2>📁 Navigating Directories</h2>
+        <p><code>cd</code>: Change directory. <code>cd ..</code> moves up one level.</p>
+    </div>
+
+    <div class="section">
+        <h2>📍 Print Current Directory</h2>
+        <p><code>pwd</code>: Displays the full path of your current working directory.</p>
+    </div>
+
+    <div class="section">
+        <h2>📄 Listing Files</h2>
+        <p><code>ls</code>: Lists files. <code>ls -l</code>: Long format. <code>ls -a</code>: Show hidden files.</p>
+    </div>
+
+    <div class="section">
+        <h2>📝 Creating & Editing Files</h2>
+        <p><code>touch file.txt</code>: Creates file. Use <code>nano</code>, <code>vim</code>, or <code>gedit</code> to edit.</p>
+    </div>
+
+    <div class="section">
+        <h2>📂 Creating Directories</h2>
+        <p><code>mkdir folder</code>: Makes new folder. <code>mkdir -p parent/child</code>: Nested folders.</p>
+    </div>
+
+    <div class="section">
+        <h2>🗑️ Deleting Files & Folders</h2>
+        <p><code>rm file</code>: Deletes file. <code>rm -r folder</code>: Deletes folder recursively.</p>
+    </div>
+
+    <div class="section">
+        <h2>📋 Copying & Moving Files</h2>
+        <p><code>cp</code>: Copy files. <code>mv</code>: Move or rename files/folders.</p>
+    </div>
+
+    <div class="section">
+        <h2>🔍 Finding Files</h2>
+        <p><code>find . -name "file.txt"</code>: Searches file from current directory.</p>
+    </div>
+
+    <div class="section">
+        <h2>🔎 Viewing File Content</h2>
+        <p><code>cat</code>: Show full file. <code>less</code>, <code>head</code>, <code>tail</code>: View parts.</p>
+    </div>
+
+    <div class="section">
+        <h2>🔐 File Permissions</h2>
+        <p><code>chmod</code>: Change file permissions. <code>chown</code>: Change ownership.</p>
+    </div>
+
+    <div class="section">
+        <h2>👤 User Management</h2>
+        <p><code>adduser</code>: Create user. <code>passwd</code>: Set password. <code>deluser</code>: Remove user.</p>
+    </div>
+
+    <div class="section">
+        <h2>📦 Installing Packages</h2>
+        <p><code>sudo apt install</code>: Install on Ubuntu/Debian. Use <code>dnf</code> or <code>yum</code> for RedHat.</p>
+    </div>
+
+    <div class="section">
+        <h2>🧪 Running Scripts</h2>
+        <p><code>bash script.sh</code>: Run script. Or: <code>chmod +x</code> & <code>./script.sh</code></p>
+    </div>
+
+    <div class="section">
+        <h2>🖥️ Monitoring System</h2>
+        <p><code>top</code>: Process viewer. <code>df -h</code>: Disk usage. <code>free -m</code>: Memory info.</p>
+    </div>
+
+    <div class="section">
+        <h2>📡 Network Commands</h2>
+        <p><code>ping</code>: Test connectivity. <code>ip a</code>: IP info. <code>netstat -tuln</code>: Open ports.</p>
+    </div>
+
+    <div class="section">
+        <h2>📜 Viewing Logs</h2>
+        <p><code>tail -f /var/log/syslog</code>: Follow system logs live. Replace with any log file.</p>
+    </div>
+
+    <div class="section">
+        <h2>📌 Process Management</h2>
+        <p><code>ps aux</code>: List processes. <code>kill PID</code>: Terminate process.</p>
+    </div>
+
+    <div class="section">
+        <h2>💡 Terminal Shortcuts</h2>
+        <p><code>Ctrl + C</code>: Cancel command. <code>Ctrl + D</code>: Logout. <code>Ctrl + L</code>: Clear screen.</p>
+    </div>
+</body>
+</html>
